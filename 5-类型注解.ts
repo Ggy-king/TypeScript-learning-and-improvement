@@ -1,0 +1,1 @@
+let a: number = 18   //:number 就是类型注解  约定俗称
