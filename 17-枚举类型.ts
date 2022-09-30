@@ -18,3 +18,15 @@ enum Direction {
 
 function changeDirection(direction: Direction) {}
 changeDirection(Direction.Up)   //访问枚举成员
+
+
+//枚举成员的值  鼠标放在上面即可  从0开始自增(默认)
+
+enum Dae {
+    Up = 0,
+    Left = 2,
+    Right = 4,
+    Down
+}
+
+// 枚举不仅提供类型，而且提供值 对象形式
