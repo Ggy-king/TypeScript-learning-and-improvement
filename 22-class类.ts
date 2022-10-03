@@ -41,6 +41,7 @@ console.log(p2.x,p2.y);
  * 2 implements实现接口
  */
 
+//  extends
 class Animal{
     move(){console.log('Moving alone');
     }
@@ -51,3 +52,16 @@ class Dog extends Animal{
 }
 
 const dog = new Dog()
+
+// implements
+interface Singale {    //interface常见接口
+    sing() :void
+    name: string
+}
+class Person2 implements Singale {
+    name = 'gao'
+    sing(): void {
+        console.log('接口，what');
+        
+    }
+}
