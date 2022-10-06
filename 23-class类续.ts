@@ -40,3 +40,9 @@ class Cata extends Animal4 {
         this.bark
     }
 }
+
+// 标记属性为只读 readonly (只能修饰属性不能修饰方法  但用在接口和对象中)   
+class Readon {
+    readonly age:number = 18  //为默认 
+    readonly noAge = '123'   //不声明类型 则后面的内容变成为字面量类型 
+}
