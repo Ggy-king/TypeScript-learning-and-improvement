@@ -1,0 +1,45 @@
+# tsconfig.json可以自动生成 命令:tsc --init
+
+{
+    "compilerOptions": {
+      # 生成代码的语言版本
+      "target": "es5",
+      # 指定要包含在编译中library
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      # 允许ts编译js文件
+      "allowJs": true,
+      # 跳过声明文件的类型检查
+      "skipLibCheck": true,
+      # es 模块 互操作 屏蔽ESModule 和 CommonJS之间的差异
+      "esModuleInterop": true,
+      # 允许通过import x from y 即使模块没有显式指定 default 导出
+      "allowSyntheticDefaultImports": true,
+      # 开启严格模式
+      "strict": true,
+      # 对文件的名称强制区分大小写
+      "forceConsistentCasingInFileNames": true,
+      # 为switch语句开启错误报告
+      "noFallthroughCasesInSwitch": true,
+      # 生成代码的模块化标准
+      "module": "esnext",
+      # 模块解析(查找)策略
+      "moduleResolution": "node",
+      # 允许导入json模块
+      "resolveJsonModule": true,
+      # 是否将没有 import/export 的文件视为旧(全局而非模板化)脚本文件
+      "isolatedModules": true,
+      # 编译时不生成任何文件(只进行类型检查)
+      "noEmit": true,
+      # 将jsx编译成什么形式
+      "jsx": "react-jsx"
+    },
+    # 允许ts处理的目录
+    "include": [
+      "src"
+    ]
+  }
+  
