@@ -38,3 +38,12 @@ Hello.defaultProps = {      //可选
 const Hello = ({name,age = 18}:Props) => (
     <div>你好，我叫:{name}，我{age}岁了</div>
 )
+
+//事件绑定和事件对象
+{/* <button onClick={onClick}>点赞</button> */}
+// const onClick(e:React.MouseEvent<HTMLButtonElement>) = () =>{}
+
+{/* <input onChange={onChange}/>
+const onChange = (e:React.ChangeEvent<HTMLInputElement>) => {} */}
+
+// 技巧: 鼠标放在e上
